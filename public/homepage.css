@@ -5,7 +5,7 @@ body{
 }
 
 .reader{
-    padding:25px 70px;
+    padding:25px 30px;
     padding-left:0;
     padding-top:0;
     display:flex;
@@ -14,37 +14,76 @@ body{
     background-color:whitesmoke;
 }
 
+
+/*        STICKYMENU      */
+
 .reader #stickymenu{
-    max-width:150px;
+    min-width:150px;
     padding:0px 0px 20px 0px;
     border-top-left-radius:25px;
     border-bottom-left-radius:25px;
     overflow: hidden;
-    transition:.3s ease-in;
 }
+
+.reader #stickymenu .sticky{
+    border-right:3px dashed grey;
+}
+
+.reader #stickymenu .sticky.stickytrue
+{
+    position:fixed;
+    top:10px;
+}
+.reader #stickymenu .contentindicator:hover,
+.reader #stickymenu .contentindicator.clicked{
+    background-color:orangered;
+    cursor:pointer;
+}
+
+
+
+
+/*      CONTENTBOX       */
+
 .reader #contentbox{
     flex:1;
-    padding:20px 30px 20px 0px;
+    padding:20px 35px;
 }
 
 .reader #contentbox .contentplate{
-    margin:30px 10px;
+    margin:0px 0px;
+    padding-bottom:50px;
+    padding-top:30px;
+    border-bottom:2.5px dashed grey;
+}
+
+.reader #contentbox .contentplate:last-of-type{
+    border-bottom:none;
 }
 
 .reader #contentbox .contentplate:nth-of-type(1){
     margin-top:0;
 }
 
-.btn{
+.reader #contentbox .contentplate .btn
+{
+    width:100%;
+    height:240px;
+    text-align:center;
+    padding:30px 0px;
+}
+
+
+
+/*     SVG  btn*/
+.reader #stickymenu .btn{
     width:100px;
     height:80px;
     padding:20px 25px;
 }
-
-.reader #stickymenu .contentindicator:hover{
-    background-color:orangered;
-    cursor:pointer;
-}
-.reader #stickymenu .contentindicator:hover .btn{
+.reader #stickymenu .contentindicator:hover .btn,
+.reader #stickymenu .contentindicator.clicked .btn{
     fill:whitesmoke;
 }
+
+

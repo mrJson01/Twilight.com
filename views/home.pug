@@ -14,16 +14,21 @@ html
             section.reader
                 
                 div#stickymenu
-                    -var n=0;
-                    while n<6
-                        div.contentindicator(data-indicate=n++)
-                            !=svg[n]
+                    div.sticky
+                        -var n=0;
+                        while n<6
+                            a(href="#contentplate"+n)
+                                div.contentindicator(data-indicate=n++)
+                                    !=svg[n]
                             
                 
                 div#contentbox
                     -var n=0;
                     while n<6
-                        div.contentplate(data-queue=n++)=' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a venenatis ipsum. Ut consectetur ipsum sit amet nisi bibendum varius. Cras malesuada malesuada rutrum. Nam ut quam sodales sem tincidunt gravida non quis libero. Aliquam ex justo, varius rhoncus tempor eget, ultricies non orci. Sed metus enim, hendrerit non libero vitae, vulputate consectetur augue. Morbi pulvinar imperdiet tellus, id egestas augue efficitur nec. Nunc in massa nec nulla molestie interdum vitae et ex. Nam eget hendrerit ipsum. Integer accumsan est a mauris auctor, eget lacinia velit tempor. Duis at libero odio.Phasellus purus dui, feugiat quis fermentum at, ultrices at neque. Maecenas varius elit ullamcorper metus mattis consectetur. Mauris sed dapibus velit.'
+                        div.contentplate(id='contentplate'+n data-queue=n++)
+                            !=svg[n]
+                            =' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a venenatis ipsum. Ut consectetur ipsum sit amet nisi bibendum varius. Cras malesuada malesuada rutrum. Nam ut quam sodales sem tincidunt gravida non quis libero. Aliquam ex justo, varius rhoncus tempor eget, ultricies non orci. Sed metus enim, hendrerit non libero vitae, vulputate consectetur augue. Morbi pulvinar imperdiet tellus, id egestas augue efficitur nec. Nunc in massa nec nulla molestie interdum vitae et ex. Nam eget hendrerit ipsum. Integer accumsan est a mauris auctor, eget lacinia velit tempor. Duis at libero odio.Phasellus purus dui, feugiat quis fermentum at, ultrices at neque. Maecenas varius elit ullamcorper metus mattis consectetur. Mauris sed dapibus velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a venenatis ipsum. Ut consectetur ipsum sit amet nisi bibendum varius. Cras malesuada malesuada rutrum. Nam ut quam sodales sem tincidunt gravida non quis libero. Aliquam ex justo, varius rhoncus tempor eget, ultricies non orci. Sed metus enim, hendrerit non libero vitae, vulputate consectetur augue. Morbi pulvinar imperdiet tellus, id egestas augue efficitur nec. Nunc in massa nec nulla molestie interdum vitae et ex. Nam eget hendrerit ipsum. Integer accumsan est a mauris auctor, eget lacinia velit tempor. Duis at libero odio.Phasellus purus dui, feugiat quis fermentum at, ultrices at neque. Maecenas varius elit ullamcorper metus mattis consectetur. Mauris sed dapibus velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a venenatis ipsum. Ut consectetur ipsum sit amet nisi bibendum varius. Cras malesuada malesuada rutrum. Nam ut quam sodales sem tincidunt gravida non quis libero. Aliquam ex justo, varius rhoncus tempor eget, ultricies non orci. Sed metus enim, hendrerit non libero vitae, vulputate consectetur augue.'
                         
+        script(type="text/javascript")!=script
                         
     
