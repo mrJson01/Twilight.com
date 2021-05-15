@@ -1,0 +1,29 @@
+html
+    head(lang="en")
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width,scale=1.0,shrink-to-fit")
+        title="Twailight main page"
+        link(rel="stylesheet" href="universal.css" type="text/css")
+        link(rel="stylesheet" href="homepage.css" type="text/css")
+        
+    body
+    
+        main
+            header(style="color:whitesmoke;")="About Us"
+            
+            section.reader
+                
+                div#stickymenu
+                    -var n=0;
+                    while n<6
+                        div.contentindicator(data-indicate=n++)
+                            !=svg[n]
+                            
+                
+                div#contentbox
+                    -var n=0;
+                    while n<6
+                        div.contentplate(data-queue=n++)=' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a venenatis ipsum. Ut consectetur ipsum sit amet nisi bibendum varius. Cras malesuada malesuada rutrum. Nam ut quam sodales sem tincidunt gravida non quis libero. Aliquam ex justo, varius rhoncus tempor eget, ultricies non orci. Sed metus enim, hendrerit non libero vitae, vulputate consectetur augue. Morbi pulvinar imperdiet tellus, id egestas augue efficitur nec. Nunc in massa nec nulla molestie interdum vitae et ex. Nam eget hendrerit ipsum. Integer accumsan est a mauris auctor, eget lacinia velit tempor. Duis at libero odio.Phasellus purus dui, feugiat quis fermentum at, ultrices at neque. Maecenas varius elit ullamcorper metus mattis consectetur. Mauris sed dapibus velit.'
+                        
+                        
+    

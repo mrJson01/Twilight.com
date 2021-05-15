@@ -1,0 +1,50 @@
+body{
+    background-image: url('homepage-images/homepage-pattern.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.reader{
+    padding:25px 70px;
+    padding-left:0;
+    padding-top:0;
+    display:flex;
+    flex-flow:row;
+    border-radius:25px;
+    background-color:whitesmoke;
+}
+
+.reader #stickymenu{
+    max-width:150px;
+    padding:0px 0px 20px 0px;
+    border-top-left-radius:25px;
+    border-bottom-left-radius:25px;
+    overflow: hidden;
+    transition:.3s ease-in;
+}
+.reader #contentbox{
+    flex:1;
+    padding:20px 30px 20px 0px;
+}
+
+.reader #contentbox .contentplate{
+    margin:30px 10px;
+}
+
+.reader #contentbox .contentplate:nth-of-type(1){
+    margin-top:0;
+}
+
+.btn{
+    width:100px;
+    height:80px;
+    padding:20px 25px;
+}
+
+.reader #stickymenu .contentindicator:hover{
+    background-color:orangered;
+    cursor:pointer;
+}
+.reader #stickymenu .contentindicator:hover .btn{
+    fill:whitesmoke;
+}
