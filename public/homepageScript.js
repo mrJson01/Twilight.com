@@ -4,11 +4,23 @@ window.onscroll = function(){
 
     var scrollY = window.scrollY;
     var menuTop = document.querySelector('#stickymenu').offsetTop; //BOTH ARE NUMBERS
+    var menuBottom = menuTop+(document.querySelector('#stickymenu').offsetHeight); 
     
     var menu = document.querySelector('#stickymenu .sticky');
-    if(scrollY>menuTop)menu.classList.add('stickytrue');
-    else menu.classList.remove('stickytrue');
     
+//    if(scrollY>menuTop){
+//        menu.classList.add('stickytrue');
+//        menu.classList.remove('stickybottom');
+//        if(scrollY+720>menuBottom){
+//            menu.classList.remove('stickytrue');
+//            menu.classList.add('stickybottom');
+//        }
+//    }
+//    else {
+//        menu.classList.remove('stickytrue');
+//        menu.classList.remove('stickybottom');
+//    }
+//    
     //CHECK WHICH PARAGRAPH IS ON SCREEN
     
     

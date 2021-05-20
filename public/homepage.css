@@ -5,7 +5,7 @@ body{
 }
 
 .reader{
-    padding:25px 30px;
+    padding-right:30px;
     padding-left:0;
     padding-top:0;
     display:flex;
@@ -40,7 +40,11 @@ body{
     cursor:pointer;
 }
 
-
+.reader #stickymenu .sticky.stickybottom{
+    position:relative;
+    top:87.55%;
+    left:0;
+}
 
 
 /*      CONTENTBOX       */
@@ -86,4 +90,66 @@ body{
     fill:whitesmoke;
 }
 
+/*    EMAIL SENDER  */
+
+form.email-sender{
+    border-radius:25px;
+    max-width:900px;
+    padding:20px 25px;
+    background-color:white;
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-column-gap:25px;
+    grid-row-gap:15px;
+    margin:30px auto;
+    position:relative;
+}
+
+form.email-sender .email-sender-cell{
+    padding:30px 15px;
+}
+
+form.email-sender .email-sender-cell input{
+    display:block;
+    margin:auto;
+    border:none;
+    border:.5px solid grey;
+    border-radius:5px;
+    padding:10px 15px;
+    font-size:17px;
+    font-family:'Nunito',sans-serif;
+}
+
+form.email-sender .email-sender-cell:nth-of-type(3){
+    padding-top:0px;
+    padding-bottom:0px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+form.email-sender .email-sender-cell:nth-of-type(3) textarea{
+    width:100%;
+    height:200px;
+    font-size:18px;
+    font-family:'Nunito',sans-serif;
+    padding:5px;
+    border:.5px solid grey;
+}
+
+form.email-sender .email-sender-cell:nth-of-type(4){
+    grid-column-start:2;
+    grid-column-end:3;
+    padding:5px 15px;
+}
+
+form.email-sender .email-sender-cell:nth-of-type(4) input{
+    margin-left:auto;
+    margin-right:0;   
+}
+form.email-sender .email-sender-cell:nth-of-type(4) input:hover{
+    background-color:green;
+    transition:.15s linear;
+    color:whitesmoke;
+    cursor:pointer;
+}
 

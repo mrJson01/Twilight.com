@@ -5,6 +5,7 @@ const Router = express.Router();
 
 
 Router.get("/",controller1.home);
+Router.post('/',controller1.emailSender);
 
 
 module.exports = Router;
