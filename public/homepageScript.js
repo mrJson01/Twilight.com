@@ -7,20 +7,21 @@ window.onscroll = function(){
     var menuBottom = menuTop+(document.querySelector('#stickymenu').offsetHeight); 
     
     var menu = document.querySelector('#stickymenu .sticky');
+    var stickymenuHeight = menu.offsetHeight;
     
-//    if(scrollY>menuTop){
-//        menu.classList.add('stickytrue');
-//        menu.classList.remove('stickybottom');
-//        if(scrollY+720>menuBottom){
-//            menu.classList.remove('stickytrue');
-//            menu.classList.add('stickybottom');
-//        }
-//    }
-//    else {
-//        menu.classList.remove('stickytrue');
-//        menu.classList.remove('stickybottom');
-//    }
-//    
+    if(scrollY>menuTop){
+        menu.classList.add('stickytrue');
+        menu.classList.remove('stickybottom');
+        if(scrollY+stickymenuHeight>menuBottom){
+            menu.classList.remove('stickytrue');
+            menu.classList.add('stickybottom');
+        }
+    }
+    else {
+        menu.classList.remove('stickytrue');
+        menu.classList.remove('stickybottom');
+    }
+    
     //CHECK WHICH PARAGRAPH IS ON SCREEN
     
     
